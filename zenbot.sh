@@ -19,6 +19,7 @@ var fs = require('fs')
 
 boot(function (err, zenbot) {
   var command_name = process.argv[2]
+  console.log('Executing: ' + process.argv.join(' '))
   if (err) {
     throw err
   }
